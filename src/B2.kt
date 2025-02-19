@@ -11,12 +11,10 @@ fun main() {
     var canh2 = b.toDouble()
     var canh3 = c.toDouble()
 
-    if(canh1<=0 || canh2<=0 || canh3<=0){
+    if (canh1 <= 0 || canh2 <= 0 || canh3 <= 0) {
         println("Khong phai 3 canh cua 1 tam giac")
-    }
-    else if(canh1 + canh2 <= canh3 || canh1 + canh3 <= canh2 || canh2 + canh3 <= canh1){
+    } else if (canh1 + canh2 <= canh3 || canh1 + canh3 <= canh2 || canh2 + canh3 <= canh1) {
         println("Khong phai 3 canh cua 1 tam giac")
-    }
-    else
+    } else
         println("3 canh cua 1 tam giac")
 }

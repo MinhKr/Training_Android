@@ -12,30 +12,30 @@ fun main() {
     print("Nhập cạnh c: ")
     val canh3 = readln().toDouble()
 
-    if(isValid(canh1,canh2,canh3) == true)
-        PrintInfo(canh1 , canh2 , canh3)
+    if (isValid(canh1, canh2, canh3) == true)
+        PrintInfo(canh1, canh2, canh3)
     else
         print("Khong phai tam giac")
 }
 
-fun PrintInfo(a : Double,b : Double,c : Double){
-    println("Chu vi: ${perimeter(a,b,c)}")
-    println("Diện tích: ${area(a,b,c)}")
+fun PrintInfo(a: Double, b: Double, c: Double) {
+    println("Chu vi: ${perimeter(a, b, c)}")
+    println("Diện tích: ${area(a, b, c)}")
 }
 
 //Dien tich
-fun area(a : Double,b : Double,c : Double) : Double{
-    val p = (a+b+c)/2
+fun area(a: Double, b: Double, c: Double): Double {
+    val p = (a + b + c) / 2
     return (kotlin.math.sqrt(p * (p - a) * (p - b) * (p - c)))
 }
 
 //Chu vi
-fun perimeter(a : Double,b : Double,c : Double) : Double{
-    return(a + b + c)
+fun perimeter(a: Double, b: Double, c: Double): Double {
+    return (a + b + c)
 }
 
 //check dieu kien tam giac
-fun isValid(a : Double,b : Double,c : Double): Boolean {
+fun isValid(a: Double, b: Double, c: Double): Boolean {
     return a > 0 && b > 0 && c > 0 && (a + b > c) && (a + c > b) && (b + c > a)
 }
 
