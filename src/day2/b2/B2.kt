@@ -11,7 +11,7 @@ fun main() {
         Circle(radius)
     }
 
-    for(i in circles.indices){
+    for (i in circles.indices) {
         val circle = circles[i]
         println("Hình tròn thứ ${i + 1}:")
         println("Đường kính: %.2f".format(circle.getDiameter()))
