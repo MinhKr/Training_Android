@@ -6,29 +6,28 @@ class SalesManagement {
     var checkProductId = false
 
     //Thêm danh mục
-    fun addCategory(categoryId : String , categoryName: String){
-        categoryList.add(Category(categoryId , categoryName))
+    fun addCategory(categoryId: String, categoryName: String) {
+        categoryList.add(Category(categoryId, categoryName))
     }
 
     //Thêm sản phẩm
-    fun addProduct(categoryId: String , product: Product){
+    fun addProduct(categoryId: String, product: Product) {
         val category = categoryList.find { it.categoryId == categoryId }//check tồn tại category
 
-        if(category == null){
+        if (category == null) {
             println("Danh mục sản phẩm không tồn tại!")
-        }
-        else{
+        } else {
             category.productList.add(product)
             println("Thêm sản phẩm thành công!")
         }
     }
 
     //Chỉnh sửa sản phẩm
-    fun updateProduct(productId:String , newName : String? , newPrice : Double? , newOrigin : String?){
+    fun updateProduct(productId: String, newName: String?, newPrice: Double?, newOrigin: String?) {
         /*var checkProductId = false*/
-        for(category in categoryList){
-            for (product in category.productList){
-                if(productId == product.productId){
+        for (category in categoryList) {
+            for (product in category.productList) {
+                if (productId == product.productId) {
                     newName?.let {
                         println("Updating")
                         product.productName = it
@@ -46,7 +45,7 @@ class SalesManagement {
                 }
             }
         }
-        if(!checkProductId)
+        if (!checkProductId)
             println("Sản phẩm ID $productId không tìm thấy!")
     }
 
@@ -63,19 +62,18 @@ class SalesManagement {
         }
     }
 
-    fun totalCategoriesValue(){
+    fun totalCategoriesValue() {
         var totalValue = categoryList.sumOf { category -> category.productList.sumOf { it.productPrice } }
         println("Tổng giá : $totalValue")
         /*return totalValue*/
     }
 
-    fun listProductsByCategory(categoryId : String){
+    fun listProductsByCategory(categoryId: String) {
         val category = categoryList.find { it.categoryId == categoryId }
-        if(category != null){
+        if (category != null) {
             println("Sản phẩm trong danh mục $categoryId: ")
-            category.productList.forEach{println(it)}
-        }
-        else{
+            category.productList.forEach { println(it) }
+        } else {
             println("Không tìm thấy danh mục")
         }
     }

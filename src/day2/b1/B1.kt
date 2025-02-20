@@ -1,9 +1,12 @@
 package day2.b1
 
-data class Product( val productId : String , var productName : String , var productPrice : Double , var productOrigin : String)
+data class Product(val productId: String, var productName: String, var productPrice: Double, var productOrigin: String)
 
-data class Category(val categoryId : String, var categoryName : String , var productList: MutableList<Product> = mutableListOf() )
-
+data class Category(
+    val categoryId: String,
+    var categoryName: String,
+    var productList: MutableList<Product> = mutableListOf()
+)
 
 
 fun main() {
@@ -25,6 +28,7 @@ fun main() {
                 val categoryId = readLine() ?: ""
                 management.listProductsByCategory(categoryId)
             }
+
             2 -> {
                 println("Nhập ID sản phẩm:")
                 val productId = readLine() ?: ""
@@ -36,15 +40,18 @@ fun main() {
                 val newOrigin = readLine()?.takeIf { it.isNotEmpty() }
                 management.updateProduct(productId, newName, newPrice, newOrigin)
             }
+
             3 -> {
                 println("Nhập ID sản phẩm:")
                 val productId = readLine() ?: ""
                 management.deleteProduct(productId)
             }
+
             4 -> management.totalCategoriesValue()
             5 -> {
                 break
             }
+
             else -> println("Tùy chọn không hợp lệ. Vui lòng thử lại.")
         }
     }
