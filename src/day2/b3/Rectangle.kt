@@ -10,6 +10,6 @@ open class Rectangle(val length: Double, val width: Double, color: String) : Sha
     }
 
     override fun getInfo(): String {
-        return "Rectangle - ${super.getInfo()}, Length: $length, Width: $width, Area: ${calculateArea()}, Perimeter: ${calculatePerimeter()}"
+        return "Rectangle: ${super.getInfo()}, Length: $length, Width: $width, Area: ${calculateArea()}, Perimeter: ${calculatePerimeter()}"
     }
 }

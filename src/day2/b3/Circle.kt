@@ -10,6 +10,6 @@ class Circle(val radius: Double, color: String) : Shape(color) {
     }
 
     override fun getInfo(): String {
-        return "Circle - ${super.getInfo()}, Radius: $radius, Area: ${calculateArea()}, Perimeter: ${calculatePerimeter()}"
+        return "Circle: ${super.getInfo()}, Radius: $radius, Area: ${calculateArea()}, Perimeter: ${calculatePerimeter()}"
     }
 }
