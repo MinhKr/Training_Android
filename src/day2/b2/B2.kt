@@ -1,17 +1,21 @@
 package day2.b2
 
-fun main() {
-    val n: Int
-    println("Nhập số lượng hình tròn:")
-    n = readLine()!!.toInt()
+import day2.b2.model.Circle
 
-    val circles = Array(n) {
+fun main() {
+    val n: Int?
+    println("Nhập số lượng hình tròn:")
+    n = readlnOrNull()?.toInt()
+
+    val circles = n?.let {
+        Array(it) {
         println("Nhập bán kính của hình tròn thứ ${it + 1}:")
-        val radius = readLine()!!.toDouble()
+        val radius = readlnOrNull()!!.toDouble()
         Circle(radius)
     }
+    }
 
-    for (i in circles.indices) {
+    circles?.indices?.forEach { i ->
         val circle = circles[i]
         println("Hình tròn thứ ${i + 1}:")
         println("Đường kính: %.2f".format(circle.getDiameter()))

@@ -1,4 +1,4 @@
-package day2.b3
+package day2.b3.model
 
 open class Shape(val color: String) {
     open fun calculateArea(): Double {

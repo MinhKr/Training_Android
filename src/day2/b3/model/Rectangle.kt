@@ -1,4 +1,4 @@
-package day2.b3
+package day2.b3.model
 
 open class Rectangle(val length: Double, val width: Double, color: String) : Shape(color) {
     override fun calculateArea(): Double {

@@ -1,4 +1,4 @@
-package day2.b3
+package day2.b3.model
 
 class Circle(val radius: Double, color: String) : Shape(color) {
     override fun calculateArea(): Double {

@@ -1,4 +1,7 @@
 package day2.b1
+import day2.b1.model.Category
+import day2.b1.model.Product
+
 
 class SalesManagement {
     val categoryList = mutableListOf<Category>()

@@ -1,12 +1,5 @@
 package day2.b1
-
-data class Product(val productId: String, var productName: String, var productPrice: Double, var productOrigin: String)
-
-data class Category(
-    val categoryId: String,
-    var categoryName: String,
-    var productList: MutableList<Product> = mutableListOf()
-)
+import day2.b1.model.Product
 
 
 fun main() {

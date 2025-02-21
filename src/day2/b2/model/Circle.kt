@@ -1,4 +1,4 @@
-package day2.b2
+package day2.b2.model
 
 data class Circle(var radius: Double) {
 //    val PI = 3.14

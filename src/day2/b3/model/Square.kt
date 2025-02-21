@@ -1,4 +1,4 @@
-package day2.b3
+package day2.b3.model
 
 class Square(val side: Double, color: String) : Rectangle(side, side, color) {
     override fun getInfo(): String {
