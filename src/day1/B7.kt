@@ -1,4 +1,4 @@
-//Bài tập 7:
+package day1//Bài tập 7:
 //Viết class UCLNBCNN trình tính:
 //- Thuộc tính a,b
 //- Phương thức khởi tạo có 2 tham số để nhập giá trị cho a,b

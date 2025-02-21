@@ -1,3 +1,5 @@
+package day1
+
 //Bài tập 8:
 //Viết chương trình nhập từ bàn phím 2 số a, b và một ký tự ch. Nếu (dùng Switch-case):
 //− ch là ‘+’ thì thực hiện phép tính a + b và in kết quả lên màn hình.

@@ -1,3 +1,5 @@
+package day1
+
 //Bài tập 5:
 //Bài toán giải phương trình bậc 2 dùng để mô tả việc giải phương trình ax2 + bx + c = 0.
 fun main() {

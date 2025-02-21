@@ -1,3 +1,5 @@
+package day1
+
 //Bài tập 6:
 //Nhập vào tháng và năm, sau đó tính ra số ngày của tháng thuộc năm đã nhập.
 fun main() {

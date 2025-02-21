@@ -1,3 +1,5 @@
+package day1
+
 //Bài tập 2:
 //Viết chương trình cho phép nhập vào 3 số thực
 //Chương trình này sẽ kiểm tra 3 số này có phải là 3 cạnh của một tam giác hay không.

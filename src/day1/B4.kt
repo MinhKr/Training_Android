@@ -1,3 +1,5 @@
+package day1
+
 //Bài tập 4:
 //Xây dựng chương trình Triangle: nhập vào 3 số a,b,c là 3 cạnh của tam giác. Xây dựng hành vi tính chu vi, diện tích tam giác được tạo từ 3 cạnh trên, chú ý kiểm tra xem a,b,c có thỏa mãn là 3 cạnh của tam giác hay không?
 //- Phương thức nhập giá trị có 3 tham số để nhập giá trị đầu vào cho a,b,c
